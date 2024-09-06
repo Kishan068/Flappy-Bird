@@ -49,9 +49,5 @@ public class CameraControl : MonoBehaviour
     void Update()
     {
         transform.position = new Vector3(Birds[BirdN].transform.position.x + offset.x, transform.position.y, transform.position.z);
-        if (Input.GetKey("escape"))
-        {
-            Application.Quit();
-        }
     }
 }
